@@ -3,14 +3,16 @@ import { RouterModule, Routes } from '@angular/router';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { LogarComponent } from './logar/logar.component';
+import { TemaComponent } from './tema/tema.component';
 
 const routes: Routes = [
-  {path:"", redirectTo:'logar', pathMatch:'full'},
+  {path:'', redirectTo:'logar', pathMatch:'full'},
 
-  {path:"logar", component:LogarComponent},
-  {path:"cadastrar", component:CadastrarComponent},
+  {path:'logar', component:LogarComponent},
+  {path:'cadastrar', component:CadastrarComponent},
 
-  {path:"inicio", component:InicioComponent}
+  {path:'inicio', component:InicioComponent},
+  {path:'tema', component:TemaComponent}
 ];
 
 @NgModule({
